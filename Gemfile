@@ -13,6 +13,7 @@ gem 'jbuilder', '~> 2.7'
 gem 'bootsnap', '>= 1.4.2', require: false
 gem 'haml-rails', '~> 2.0'
 gem 'react-rails'
+gem 'jquery-rails'
 
 gem 'byebug', platform: :mri
 gem 'rspec-rails', '~> 3.5'
