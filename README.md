@@ -10,7 +10,7 @@ Iniciar aplicacion
  - bin/rails db:migrate
 6. sudo docker-compose up
 
-1. Punto
+Punto 1:
 Estructura: 
 estilos: app/assets/stylesheets/*
 controladores: app/controllers/*
@@ -19,7 +19,7 @@ modelos: app/models/*
 pruebas: spec/*
 librerias: lib/*
 
-2. Punto
+Punto 2:
 Libreria: lib/sum_arrays.rb
 Prueba: spec/lib/sum_arrays_spec.rb
 Como ejecutar la prueba:sudo docker-compose run web bundle exec rspec spec/lib/sum_arrays_spec.rb
