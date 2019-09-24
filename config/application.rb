@@ -25,6 +25,7 @@ module Apptest
     # -- all .rb files in that directory are automatically loaded after loading
     # the framework and any gems in your application.
     config.generators.system_tests = nil
+    config.autoload_paths += %W(#{config.root}/lib)
     config.generators do |g|
       g.test_framework false
       g.stylesheets false

@@ -1,11 +1,22 @@
 class UsersController < ApplicationController
-  def index
-    @users = User.all
+  skip_before_action :verify_authenticity_token
+
+  def new
+    @user = User.new(params)
   end
 
   def create
     User.create(user_params)
   end
+
+  def index
+    @users = User.all
+    respond_to do |format|
+      format.html
+      format.json { render json: @users }
+    end
+  end
+
 
   def destroy
     User.destroy(params[:id])
