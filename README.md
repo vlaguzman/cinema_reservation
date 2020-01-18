@@ -1,14 +1,13 @@
 Iniciar aplicacion
 1. sudo apt  install docker-compose
-2. git clone git@github.com:sebascp/apptest.git
-3. mkdir apptest
-4. sudo docker-compose build
-5. sudo docker-compose run web /bin/bash
+2. git clone git@github.com:vlaguzman/cinema_reservation.git
+3. sudo docker-compose build
+4. sudo docker-compose run web /bin/bash
  - dcbundle
  - yarn install --check-files (or sudo docker-compose run web yarn install --check-files)
  - bin/rails db:create
  - bin/rails db:migrate
-6. sudo docker-compose up
+5. sudo docker-compose up
 
 Punto 1:
 Estructura: 
