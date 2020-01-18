@@ -1,7 +1,9 @@
-FactoryGirl.define do
+FactoryBot.define do
   factory :user do
-    first_name { 'Sebastian' }
-    last_name  { 'Castro' }
-    phone      { 55533 }
+    first_name { 'Vladimir' }
+    last_name  { 'Guzman' }
+    phone      { 3173719437 }
+    email      { 'guzman.vla@gmail.com' }
+    international_id { '1072647335' }
   end
 end
