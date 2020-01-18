@@ -1,6 +1,15 @@
 require "rails_helper"
 
 describe User, type: :model do 
+
+  describe "validations" do
+    it { should respond_to(:last_name) }
+    it { should respond_to(:phone) }
+    it { should validate_presence_of(:first_name) }
+    it { should validate_presence_of(:email) }
+    it { should validate_presence_of(:international_id) }
+  end
+
   context "When a user is registering" do
     context "When all fields are full" do
       it "Should create the user" do

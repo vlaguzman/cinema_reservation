@@ -1,2 +1,2 @@
-class CurriculumVitae < ApplicationRecord
+class Movie < ApplicationRecord
 end
