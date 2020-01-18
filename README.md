@@ -4,7 +4,7 @@ Iniciar aplicacion
 3. mkdir apptest
 4. sudo docker-compose build
 5. sudo docker-compose run web /bin/bash
- - bundle install
+ - dcbundle
  - yarn install --check-files (or sudo docker-compose run web yarn install --check-files)
  - bin/rails db:create
  - bin/rails db:migrate
@@ -19,7 +19,8 @@ Estructura:
 - pruebas: spec/*
 - librerias: lib/*
 
-Punto 2:
-- Libreria: lib/sum_arrays.rb
-- Prueba: spec/lib/sum_arrays_spec.rb
-- Como ejecutar la prueba:sudo docker-compose run web bundle exec rspec spec/lib/sum_arrays_spec.rb
+Alias:
+alias run-compose='sudo docker-compose'
+alias run-any='run-compose run web'
+alias dcbundle="run-any bundle"
+
