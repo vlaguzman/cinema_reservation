@@ -28,7 +28,8 @@ class ListUsers extends Component {
       user: {
         first_name: target[0].value,
         last_name: target[1].value,
-        phone: target[2].value
+        email: target[2].value,
+        international_id: target[3].value
       }
     }
     const dataTransform = JSON.stringify(data)
@@ -65,7 +66,8 @@ class ListUsers extends Component {
         <tr>
           <td>{value.first_name}</td>
           <td>{value.last_name}</td>
-          <td>{value.phone}</td>
+          <td>{value.email}</td>
+          <td>{value.international_id}</td>
           <td>
             <button className='button-delete' onClick={ this.handleDelete.bind(this, value.id) }>Eliminar</button>
           </td>
@@ -87,7 +89,8 @@ class ListUsers extends Component {
             <tr>
               <th>Nombre</th>
               <th>Apellido</th>
-              <th>Telefono</th>
+              <th>Email</th>
+              <th>Cedula</th>
               <th>Acciones</th>
             </tr>
             { this.renderUsers() }

@@ -14,8 +14,10 @@ class CreateUser extends Component {
         <input type='text' name='user[first_name]' id='user_first_name'></input>
         <label>Apellido</label>
         <input type='text' name='user[last_name]' id='user_last_name'></input>
-        <label>Telefono</label>
-        <input type='tel' name='user[phone]' id='user_phone'></input>
+        <label>Email</label>
+        <input type='text' name='user[email]' id='user_email'></input>
+        <label>Cedula</label>
+        <input type='text' name='user[international_id]' id='international_id'></input>
         <input className='button-create' type='submit' value='submit'></input>
         <span>Para ver reflejado el usuario en la tabla, por favor recarge la pagina</span>
       </form>
