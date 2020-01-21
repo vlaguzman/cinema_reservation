@@ -28,6 +28,7 @@ class ListMovies extends Component {
       movie: {
         name: target[0].value,
         description: target[1].value,
+        image_url: target[2].value,
       }
     }
     const dataTransform = JSON.stringify(data)
