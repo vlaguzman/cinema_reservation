@@ -12,7 +12,7 @@
       .row.small-up-2.medium-up-3.large-up-4
         - @movies.all.each do |movie|
           .column
-            %img.thumbnail{:src => "https://placehold.it/300x400"}/
+            %img.thumbnail{:src => movie.image_url}/
             %h5= movie.name
       %hr/
       = react_component('Home', { movies: @movies, url: movie_path }, prerender: true)

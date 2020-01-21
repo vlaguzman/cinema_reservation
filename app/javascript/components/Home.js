@@ -28,7 +28,6 @@ class ListMovies extends Component {
       movie: {
         name: target[0].value,
         description: target[1].value,
-        image_url: target[2].value,
       }
     }
     const dataTransform = JSON.stringify(data)
@@ -65,7 +64,6 @@ class ListMovies extends Component {
         <tr>
           <td>{value.name}</td>
           <td>{value.description}</td>
-          <td>{value.image_url}</td>
           <td>
             <button className='button-delete' onClick={ this.handleDelete.bind(this, value.id) }>Eliminar</button>
           </td>
@@ -87,7 +85,6 @@ class ListMovies extends Component {
             <tr>
               <th>Nombre</th>
               <th>Descripción</th>
-              <th>Imagen</th>
               <th>Acciones</th>
             </tr>
             { this.renderMovies() }
